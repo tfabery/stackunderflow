@@ -2,8 +2,10 @@
 
 {{update-question question=model update="update"}}
 
-{{#each model.answers as |answer|}}
+<div class="tiles">
+  {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}
-{{/each}}
+  {{/each}}
+</div>
 
 {{new-answer question=model save="save"}}

@@ -1,13 +1,15 @@
 <div id="newAnswer">
   {{#if addNewAnswer}}
-  <div class="answerForm">
-    <form>
-      {{input value=content id="content" placeholder="Answer"}}
-      {{input value=answerAuthor id="answerAuthor" placeholder="Author"}}
-      <button {{action 'save'}}>Save</button>
-    </form>
-  </div>
+    <div class="form">
+      <form>
+        {{input value=content id="content" placeholder="Answer"}}
+        {{input value=answerAuthor id="answerAuthor" placeholder="Author"}}
+        <button {{action 'save'}}>Save</button>
+      </form>
+    </div>
   {{else}}
-  <button {{action 'answerFormShow'}} class="newbtn">Answer</button>
+    <div class="btn-div">
+      <button {{action 'answerFormShow'}} class="newbtn">Answer</button>
+    </div>
   {{/if}}
 </div>

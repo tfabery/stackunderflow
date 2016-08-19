@@ -1,5 +1,5 @@
 {{#if updateQuestion}}
-  <div class="questionForm">
+  <div class="form">
     <form>
       <p>
         Edit
@@ -11,5 +11,7 @@
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}} class="editbtn">Edit</button>
+  <div class="btn-div">
+    <button {{action 'questionFormShow'}} class="editbtn">Edit</button>
+  </div>
 {{/if}}

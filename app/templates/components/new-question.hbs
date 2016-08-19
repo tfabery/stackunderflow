@@ -1,5 +1,5 @@
 {{#if addNewQuestion}}
-  <div class="questionForm">
+  <div class="form">
     <form>
       {{input value=content id="content" placeholder="Question"}}
       {{input value=questionAuthor id="questionAuthor" placeholder="Author"}}
@@ -8,5 +8,7 @@
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}} class="newbtn">Ask</button>
+  <div class="btn-div">
+    <button {{action 'questionFormShow'}} class="newbtn">Ask</button>
+  </div>
 {{/if}}
