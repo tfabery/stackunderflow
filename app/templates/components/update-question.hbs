@@ -6,8 +6,8 @@
       </p>
       {{input value=question.content id="content"}}
       {{input value=question.questionAuthor id="questionAuthor"}}
-      {{input value=question.category id="category" placeholder="Category"}}
-      <button {{action 'update'}}>Save</button>
+      {{input value=question.category id="category"}}
+      <button {{action 'update' question}}>Save</button>
     </form>
   </div>
 {{else}}

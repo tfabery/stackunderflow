@@ -1,5 +1,9 @@
-{{#each model.questions as |question|}}
-  {{question-tile question=question}}
-{{/each}}
+<div id="questionTiles">
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</div>
 
-{{new-question save="save"}}
+<div class="newQ">
+  {{new-question save="save"}}
+</div>
