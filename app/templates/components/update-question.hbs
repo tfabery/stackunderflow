@@ -1,0 +1,15 @@
+{{#if updateQuestion}}
+  <div class="questionForm">
+    <form>
+      <p>
+        Edit
+      </p>
+      {{input value=question.content id="content"}}
+      {{input value=question.questionAuthor id="questionAuthor"}}
+      {{input value=question.category id="category" placeholder="Category"}}
+      <button {{action 'update'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'questionFormShow'}} class="editbtn">Edit</button>
+{{/if}}

@@ -1,0 +1,12 @@
+{{#if addNewQuestion}}
+  <div class="questionForm">
+    <form>
+      {{input value=content id="content" placeholder="Question"}}
+      {{input value=questionAuthor id="questionAuthor" placeholder="Author"}}
+      {{input value=category id="category" placeholder="Category"}}
+      <button {{action 'save'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'questionFormShow'}} class="newbtn">Ask</button>
+{{/if}}

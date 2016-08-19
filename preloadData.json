@@ -1,0 +1,17 @@
+{
+  "questions":[{
+      "content": "question1",
+      "questionAuthor": "author1",
+      "category": "cat1"
+    },
+    {
+      "content": "question2",
+      "questionAuthor": "author2",
+      "category": "cat2"
+    },
+    {
+      "content": "question3",
+      "questionAuthor": "author3",
+      "category": "cat1"
+  }]
+}
