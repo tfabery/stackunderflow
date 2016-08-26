@@ -1,12 +1,20 @@
 {{#link-to 'question' question.id class="goQ"}}
   <div class="card">
-    <p class="content">
-      {{question.content}}
-      {{{fire}}}
-      {{on-fire question}}
-    </p>
-    <p class="author">
-      {{question.questionAuthor}}
-    </p>
+    <div class="content">
+      <p>
+        {{question.content}}
+      </p>
+    </div>
+    <div class="author">
+      <p>
+        # of answers: {{numberOfAnswers}}
+      </p>
+      <p>
+        {{on-fire question}}
+      </p>
+      <p class="author">
+        {{question.questionAuthor}}
+      </p>
+    </div>
   </div>
 {{/link-to}}
