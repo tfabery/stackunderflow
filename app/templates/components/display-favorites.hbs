@@ -1,4 +1,22 @@
-{{#each favorite.questions as |question|}}
-  <h3>{{question.title}}</h3>
-
+{{#each favorites.questions as |question|}}
+{{#link-to 'question' question.id class="goQ"}}
+  <div class="card">
+    <div class="content">
+      <p>
+        {{question.content}}
+      </p>
+    </div>
+    <div class="author">
+      <p>
+        # of answers: {{numberOfAnswers}}
+      </p>
+      <p>
+        {{on-fire question}}
+      </p>
+      <p class="author">
+        {{question.questionAuthor}}
+      </p>
+    </div>
+  </div>
+  {{/link-to}}
 {{/each}}
